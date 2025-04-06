@@ -29,7 +29,6 @@
 .gallery {
   list-style-type: none;
   display: flex;
-  margin: 0 auto;
   flex-wrap: wrap;
   gap: 24px;
   margin-bottom: 20px;

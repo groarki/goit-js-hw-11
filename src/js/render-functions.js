@@ -2,7 +2,7 @@ import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const list = document.querySelector('.gallery');
-const loader = document.querySelector('.loodie');
+const loader = document.querySelector('.loader');
 
 export function createGallery(images) {
   clearGallery();

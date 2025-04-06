@@ -10,6 +10,8 @@ import {
 const form = document.querySelector('.form');
 const input = form.querySelector('input[name="search-text"]');
 
+hideLoader();
+
 form.addEventListener('submit', event => {
   event.preventDefault();
   const query = input.value.trim();

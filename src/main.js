@@ -32,6 +32,7 @@ form.addEventListener('submit', event => {
 
         form.reset();
         clearGallery();
+        hideLoader();
         return;
       }
       createGallery(data.hits);
@@ -39,6 +40,8 @@ form.addEventListener('submit', event => {
       console.log(data);
     })
     .catch(error => {
+      clearGallery();
+      hideLoader();
       iziToast.error({
         message: 'Sorry, something went wrong!',
         position: 'topRight',
